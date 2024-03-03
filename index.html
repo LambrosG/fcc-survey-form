@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Greek Islands</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <h1 id="title">Greek Islands Survey</h1>
+  <p id="description">Complete the survey and win a <strong>weekend for 2 people</strong> on your favourite island!</p>
+
+  <form id="survey-form" method="post" action='#'>
+
+    <fieldset>
+      <legend>Regions and Islands</legend>
+
+      <label for="dropdown">Favourite Region:
+        <select id="dropdown">
+          <option value="">Select</option>
+          <option value="skyros">Argosaronic</option>
+          <option value="mykonos">Cyclades</option>
+          <option value="santorini">Crete</option>
+          <option value="paros">Dodecanese</option>
+          <option value="naxos">Evia</option>
+          <option value="crete">Ionian</option>
+          <option value="skiathos">North Aegean</option>
+          <option value="skopelos">Sporades</option>
+        </select>
+      </label>
+
+      <label for="notes">Favourite Islands:
+        <textarea id="notes" placeholder="Santorini, Paros, Mykonos, Skyros"></textarea>
+      </label>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>About You</legend>
+      <label for="name">First Name:
+        <input id="name" type="text" required placeholder="Lampros">
+      </label>
+
+      <label for="surname">Last Name:
+        <input id="surname" type="text" required placeholder="Gerantonis">
+      </label>
+
+      <label for="occupation">Occupation:
+        <input id="occupation" type="text" required placeholder="Software Developer">
+      </label>
+
+      <label for="email">Email:
+        <input id="email" type="email" placeholder="john@example.com" required>
+      </label>
+
+      <label for="number">Age:
+        <input id="number" type="number" placeholder="32" min="18" max="120" required>
+      </label>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Your Sex (Optional)</legend>
+      <div><label>Male<input type="radio" name="gender" value="male"></label></div>
+      <div><label>Female<input type="radio" name="gender" value="female"></label></div>
+      <div><label>Other<input type="radio" name="gender" value="other"></label></div>
+    </fieldset>
+
+    <label><input type="checkbox" value="termsconditions" required>I accept the <a href="https://www.google.com">terms and conditions</a></label>
+    <label><input type="checkbox" value="newsletters">I want to receive newsletters from Lampros Travels (Optional)</label>
+    <input type="submit" id="submit">
+
+  </form>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(33, 56, 99);
+    color: rgb(229, 227, 226);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+form {
+    background: rgba(0,0,0,25%);
+    width: 80vw;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+label{
+    display: block;
+}
+
+a{
+    color: green;
+}
+
+#notes-label{
+    margin-top: 5px;
+}
+
+input[type=submit] {
+    display: block;
+    width: 50%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #5f5fbd;
+    border-color: white;
+    min-width: 300px;
+}
